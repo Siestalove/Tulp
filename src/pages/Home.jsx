@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import logo from '../assets/images/1.jpg';
 
@@ -13,7 +14,7 @@ const Home = () => {
                     <p className="hero-text">
                         Мы верим, что тюльпан — это больше, чем цветок. Это первое дыхание весны, улыбка, комплимент и искренняя радость в простой стеклянной вазе.
                     </p>
-                    <a href="/catalog" className="cta-button">Смотреть каталог</a>
+                    <Link to="/catalog" className="cta-button">Смотреть каталог</Link>
                 </div>
             </section>
 
