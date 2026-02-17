@@ -1,0 +1,235 @@
+.home {
+    padding-top: 80px;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--color-bg);
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.hero-logo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-title {
+    font-size: 4rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.hero-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--color-primary);
+    color: white;
+    font-family: var(--font-body);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+}
+
+.about {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.about-item {
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.about-item:hover {
+    transform: translateY(-5px);
+}
+
+.about-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--color-primary);
+}
+
+.inspiration-text {
+    font-size: 1.5rem;
+    font-family: var(--font-heading);
+    color: var(--color-text);
+    margin-top: 40px;
+}
+
+.contact {
+    background: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--color-primary);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-card a {
+    color: var(--color-primary);
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.contact-card a:hover {
+    border-bottom-color: var(--color-primary);
+}
+
+.delivery-info {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+.pricing-delivery {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.pricing-card,
+.delivery-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.pricing-card:hover,
+.delivery-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+.pricing-card h3,
+.delivery-card h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.highlight-text {
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #555;
+    line-height: 1.6;
+}
+
+.pricing-list,
+.delivery-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-list li,
+.delivery-list li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.pricing-list li strong,
+.delivery-list li strong {
+    color: var(--color-accent);
+    font-weight: 600;
+}
