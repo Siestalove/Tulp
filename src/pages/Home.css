@@ -228,6 +228,11 @@
     position: relative;
 }
 
+.delivery-list li {
+    text-align: center;
+    padding-left: 0;
+}
+
 .pricing-list li strong,
 .delivery-list li strong {
     color: var(--color-accent);

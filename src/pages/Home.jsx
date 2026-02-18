@@ -12,6 +12,7 @@ const Home = () => {
                     <img src={logo} alt="Логотип J&G Tulip Atelier" className="hero-logo" />
                     <h1 className="hero-title">J&G Tulip Atelier</h1>
                     <p className="hero-subtitle">Первое дыхание весны</p>
+                    <p className="hero-text">Тюльпаны оптом, в розницу, букетом</p>
                     <p className="hero-text">
                         Мы верим, что тюльпан — это больше, чем цветок. Это первое дыхание весны, улыбка, комплимент и искренняя радость в простой стеклянной вазе.
                     </p>
@@ -64,11 +65,9 @@ const Home = () => {
                 </div>
 
                 <div className="delivery-card">
-                    <h3>Доставка и Получение</h3>
+                    <h3>Наш адрес</h3>
                     <ul className="delivery-list">
-                        <li>❀ Есть наша платная доставка по городу</li>
-                        <li>❀ Можно заказать Яндекс Доставку самостоятельно</li>
-                        <li>❀ Самовывоз — ориентир <strong>Белые Росы</strong></li>
+                        <li>Улица 2-я Прокопьевская</li>
                     </ul>
                 </div>
             </section>

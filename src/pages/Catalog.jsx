@@ -23,11 +23,11 @@ import img18 from '../assets/images/18.jpg';
 import img19 from '../assets/images/19.jpg';
 
 const flowers = [
-    { id: 1, name: 'Orange Juice', price: '140₽', image: img2, description: 'Оранжевые тюльпаны, символизирующие любовь и страсть.' },
-    { id: 2, name: 'Hennie v.d. Most', price: '140₽', image: img3, description: 'Искры пламени.' },
-    { id: 3, name: 'Milkshake', price: '140₽', image: img4, description: 'Идеал сдержанной роскоши, чья красота — в тонкости, а не в яркости.' },
-    { id: 4, name: 'Columbus', price: '140₽', image: imgColumbus, description: 'Раскрываясь, наполняются теплым, солнечным светом.' },
-    { id: 5, name: 'Iceberg', price: '140₽', image: img6, description: 'Чистые белые тюльпаны, олицетворяющие невинность и чистоту. Нежность в каждом лепестке.' },
+    { id: 1, name: 'Columbus', price: '140₽', image: imgColumbus, description: 'Раскрываясь, наполняются теплым, солнечным светом.' },
+    { id: 2, name: 'Iceberg', price: '140₽', image: img6, description: 'Чистые белые тюльпаны, олицетворяющие невинность и чистоту. Нежность в каждом лепестке.' },
+    { id: 3, name: 'Orange Juice', price: '140₽', image: img2, description: 'Оранжевые тюльпаны, символизирующие любовь и страсть.' },
+    { id: 4, name: 'Hennie v.d. Most', price: '140₽', image: img3, description: 'Искры пламени.' },
+    { id: 5, name: 'Milkshake', price: '140₽', image: img4, description: 'Идеал сдержанной роскоши, чья красота — в тонкости, а не в яркости.' },
     { id: 6, name: 'First Price', price: '140₽', image: img7, description: 'Окутанные вихрем сочных оттенков.' },
     { id: 7, name: 'Double Price', price: '140₽', image: img8, description: 'Гармония между спокойствием и страстью.' },
     { id: 8, name: 'Orca', price: '140₽', image: img9, description: 'Прониклись медовым румянцем.' },
