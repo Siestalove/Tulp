@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import logo from '../assets/images/1.jpg';
+import Catalog from './Catalog';
 
 const Home = () => {
     return (
@@ -14,9 +15,11 @@ const Home = () => {
                     <p className="hero-text">
                         Мы верим, что тюльпан — это больше, чем цветок. Это первое дыхание весны, улыбка, комплимент и искренняя радость в простой стеклянной вазе.
                     </p>
-                    <Link to="/catalog" className="cta-button">Смотреть каталог</Link>
+                    <a href="#catalog" className="cta-button">Смотреть каталог</a>
                 </div>
             </section>
+
+            <Catalog />
 
             <section className="about container">
                 <div className="about-grid">
@@ -40,14 +43,23 @@ const Home = () => {
 
             <section className="pricing-delivery container">
                 <div className="pricing-card">
-                    <h3>Предзаказ и Цены</h3>
+                    <h3>Варианты заказа</h3>
                     <p className="highlight-text">
-                        У вас есть возможность гарантированно получить желанный товар из первой партии по наиболее выгодной цене, позволяя планировать покупку без риска 🤩
+                        Мы предлагаем удобные форматы сотрудничества для каждого клиента, гарантируя свежесть и качество.
                     </p>
                     <ul className="pricing-list">
-                        <li>❀ Тюльпаны по предзаказу — <strong>140₽/шт</strong></li>
-                        <li>❀ Сборка букета под ленту — <strong>бесплатно</strong></li>
-                        <li>❀ За сборку букета в декор — <strong>150₽/букет</strong></li>
+                        <li>
+                            <strong>Оптовые поставки</strong>
+                            <p>Специальные условия для партнеров и корпоративных клиентов. Тюльпаны экстра-класса для вашего бизнеса.</p>
+                        </li>
+                        <li>
+                            <strong>Розничная продажа</strong>
+                            <p>Радуйте любимых свежими цветами. Доступны заказы от одного тюльпана до роскошных охапок.</p>
+                        </li>
+                        <li>
+                            <strong>Авторские букеты</strong>
+                            <p>Индивидуальный подход к каждому букету. Создадим композицию, которая идеально выразит ваши чувства.</p>
+                        </li>
                     </ul>
                 </div>
 

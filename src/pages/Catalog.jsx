@@ -53,7 +53,7 @@ const Catalog = () => {
     };
 
     return (
-        <div className="catalog">
+        <div className="catalog" id="catalog">
             <div className="container">
                 <h2>Наша коллекция</h2>
                 <p className="catalog-subtitle">Выберите идеальный букет для любимых</p>
@@ -66,7 +66,6 @@ const Catalog = () => {
                             </div>
                             <div className="card-content">
                                 <h3>{flower.name}</h3>
-                                <p className="price">{flower.price}</p>
                                 <button className="order-btn" onClick={handleOrderClick}>Заказать</button>
                             </div>
                         </div>
@@ -90,6 +89,10 @@ const Catalog = () => {
                     <div className="modal-content order-modal" onClick={(e) => e.stopPropagation()}>
                         <button className="close-btn" onClick={() => setIsOrderModalOpen(false)}>&times;</button>
                         <h3>Связаться для заказа</h3>
+                        <div className="promo-code-container" style={{ margin: '20px 0', padding: '15px', background: '#fff0f5', borderRadius: '10px', border: '1px dashed var(--color-primary)' }}>
+                            <p style={{ margin: '0 0 5px', fontSize: '0.9rem', color: '#666' }}>Ваш промокод на скидку:</p>
+                            <span style={{ fontSize: '2rem', fontWeight: 'bold', color: 'var(--color-primary)', letterSpacing: '2px' }}>FLOW10</span>
+                        </div>
                         <p>Выберите удобный способ связи или сканируйте QR-код:</p>
 
                         <div className="qr-container">
