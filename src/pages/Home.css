@@ -3,15 +3,17 @@
 }
 
 .hero {
-    height: 90vh;
+    min-height: 90vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: var(--color-bg);
-    padding: 0 20px;
+    /* background: var(--color-bg); Removed to show floral background */
+    padding: 60px 20px;
+    /* Increased vertical padding */
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; Removed to prevent clipping */
 }
 
 
@@ -20,6 +22,11 @@
     z-index: 1;
     max-width: 800px;
     animation: fadeIn 1.5s ease-out;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .hero-logo {
@@ -73,6 +80,58 @@
     box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
 }
 
+.extra-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+button.cta-button {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+button.cta-button.telegram-btn,
+a.cta-button.telegram-btn {
+    background: #0088cc;
+    border: 2px solid #0088cc;
+    color: white;
+    padding: 10px 30px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+    min-width: 120px;
+    /* Ensure buttons are equal width */
+}
+
+button.cta-button.telegram-btn:hover,
+a.cta-button.telegram-btn:hover {
+    background: #0077b5;
+    border-color: #0077b5;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 136, 204, 0.4);
+}
+
+.btn-subtitle {
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-top: 4px;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
 .about {
     padding: 100px 20px;
     text-align: center;
@@ -108,6 +167,12 @@
     font-family: var(--font-heading);
     color: var(--color-text);
     margin-top: 40px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px 40px;
+    display: inline-block;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
 }
 
 .contact {
@@ -166,9 +231,74 @@
 }
 
 @media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        /* Increased to fit content */
+        padding-bottom: 60px;
+        padding-top: 40px;
+        /* Added spacing from top */
+        align-items: flex-start;
+        /* Align to top to avoid vertical centering clipping */
+    }
+
+    .hero-content {
+        padding: 40px 20px;
+        /* Increased top/bottom padding */
+        margin-top: 20px;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .extra-buttons {
+        gap: 10px;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .extra-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .telegram-btn,
+    .cta-button {
+        width: auto;
+        min-width: 200px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+}
+
+.promo-code {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.promo-code strong {
+    color: var(--color-primary);
+    font-weight: 600;
 }
 
 .pricing-delivery {
